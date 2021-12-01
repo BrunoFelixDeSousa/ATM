@@ -3,7 +3,11 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("ATM")
+project(
+	"ATM"
+	VERSION 0.0.1 
+	LANGUAGES CXX
+)
 
 # Adicione a origem ao executável deste projeto.
 add_executable (ATM "ATM.cpp" "ATM.h")
