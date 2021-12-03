@@ -7,6 +7,6 @@ using namespace std;
 
 int main()
 {
-	cout << "Iniciando projeto ATM." << endl;
+	
 	return 0;
 }

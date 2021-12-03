@@ -10,6 +10,27 @@ project(
 )
 
 # Adicione a origem ao executável deste projeto.
-add_executable (ATM "ATM.cpp" "ATM.h")
+add_executable (ATM 
+ "ATM.cpp" 
+ "ATM.h" 
+ "Screen.h"
+ "Screen.cpp"
+ "Keypad.h" 
+ "Keypad.cpp" 
+ "CashDispenser.h"
+ "CashDispenser.cpp"
+ "DepositSlot.h"
+ "DepositSlot.cpp" 
+ "Account.h" 
+ "Account.cpp" 
+ "BankDatabase.h" 
+ "BankDatabase.cpp" 
+ "Transaction.h" 
+ "Transaction.cpp" 
+ "BalanceInquiry.h" 
+ "BalanceInquiry.cpp" 
+ "Withdrawal.h" 
+ "Withdrawal.cpp"
+)
 
 # TODO: Adicione testes e instale destinos, se necessário.
