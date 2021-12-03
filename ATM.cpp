@@ -138,14 +138,3 @@ Transaction* ATM::CreateTransaction(int type) {
 	}
 	return tempPtr;
 }
-
-
-
-
-
-
-int main()
-{
-	
-	return 0;
-}
