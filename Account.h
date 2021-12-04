@@ -4,7 +4,7 @@ class Account
 {
 public:
 	Account(int, int, double, double); // o construtor configura atributos
-	bool validattePIN(int) const; // o PIN especificado pelo usuário é correto?
+	bool validatePIN(int) const; // o PIN especificado pelo usuário é correto?
 	double getAvailableBalance() const; // retorna o saldo disponível
 	double getTotalBalance() const; // retorna o saldo total
 	void credit(double); // adiciona um valor ao de Account
