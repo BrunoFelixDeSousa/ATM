@@ -13,11 +13,11 @@ BankDatabase::BankDatabase()
 
 Account* BankDatabase::getAccount(int accountNumber)
 {
-	for (size_t i = 0; i < accounts.size(); i++ + )
+	for (size_t i = 0; i < accounts.size(); i++ )
 	{
 		if (accounts[i].getAccountNumber() == accountNumber)
 		{
-			return &accounts;
+			return &accounts[i];
 		}
 	}
 
