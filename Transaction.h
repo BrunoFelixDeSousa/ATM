@@ -15,7 +15,8 @@ public:
 	Screen& getScreen() const; // retorna a referencia á tela
 	BankDatabase& getBankDatabase() const; // retorna referencia ao banco de dados
 
-	virtual void execute() = 0;
+	// função virtual pura para realizar a transação
+	virtual void execute() = 0; // sobrescrita em classes derivadas
 
 private:
 	int accountNumber;
