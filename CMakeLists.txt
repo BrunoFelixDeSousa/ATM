@@ -31,6 +31,6 @@ add_executable (ATM
  "BalanceInquiry.cpp" 
  "Withdrawal.h" 
  "Withdrawal.cpp"
-)
+ "Deposit.h")
 
 # TODO: Adicione testes e instale destinos, se necessário.

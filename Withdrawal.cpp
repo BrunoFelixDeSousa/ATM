@@ -64,3 +64,42 @@ void Withdrawal::execute()
 	} while (!cashDispensed && !transactionCanceled);
 }
 
+int Withdrawal::displayMenuOfAmoount() const
+{
+	int userChoice = 0;
+
+	Screen& screen = getScreen();
+
+	int amount[]{ 0, 20, 40, 60, 100, 200 };
+
+	while ( userChoice == 0 )
+	{
+		screen.displayMessageLine("\nopcoes de retirada:");
+		screen.displayMessageLine("1 - $20");
+		screen.displayMessageLine("2 - $40");
+		screen.displayMessageLine("3 - $60");
+		screen.displayMessageLine("4 - $100");
+		screen.displayMessageLine("5 - $200");
+		screen.displayMessageLine("6 - cancelar transacao");
+		screen.displayMessageLine("\nescolha opcao de retirada (1-6): ");
+	
+		int input = keypad.getInput();
+		switch (input)
+		{
+		case 1:
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+			userChoice = amount[input];
+			break;
+		case CANCELED:
+			userChoice = CANCELED;
+			break;
+		default:
+			screen.displayMessageLine("\nselecao invalida, tente novamente.");
+		}
+	}
+
+	return userChoice;
+}
