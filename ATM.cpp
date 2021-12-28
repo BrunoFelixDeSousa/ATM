@@ -44,7 +44,7 @@ void ATM::authenticateUser()
 	int pin = keypad.getInput();                       // insere o pin
 
 	// configura userAuthenticated como um valor bool retornado pelo banco de dados
-	userAuthenticated = bankDatabse.authenticateUSer(accountNumber, pin);
+	userAuthenticated = bankDatabase.authenticateUSer(accountNumber, pin);
 
 	//veridifica se a autenticação foi bem sucedida
 	if (userAuthenticated)
@@ -109,7 +109,7 @@ int ATM::displayMainMenu() const
 	screen.displayMessageLine("4 - Sair\n");
 	screen.displayMessage("Insira uma escolha: “");
 	
-	return keypad.getIput(); // retorna a seleção do usuário
+	return keypad.getInput(); // retorna a seleção do usuário
 }
 
 
