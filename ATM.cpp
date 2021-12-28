@@ -3,7 +3,7 @@
 #include "Transaction.h"
 #include "BalanceInquiry.h"
 #include "Withdrawal.h"
-#include "DepositSlot.h"
+#include "Deposit.h"
 
 // constantes de enumeração representam as principais opções de menu
 enum MenuOption{ BALANCE_INQUIRY = 1, WITHDRAWAL, DEPOSIT, EXIT };
